@@ -16,14 +16,24 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
+//
 allprojects {
     repositories {
         google()
         jcenter()
-        
+
     }
 }
+//allprojects {
+//    tasks.withType(JavaCompile) {
+//        options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+//    }
+//    repositories {
+//        google()
+//        jcenter()
+//
+//    }
+//}
 
 task clean(type: Delete) {
     delete rootProject.buildDir
